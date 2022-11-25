@@ -1,0 +1,26 @@
+﻿  Compiling CUDA source file gpu.cu...
+  
+  C:\Parallel-Programming-main\Parallel-Programming-main\GPU>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o C:\Parallel-Programming-main\Parallel-Programming-main\GPU\x64\Debug\gpu.cu.obj "C:\Parallel-Programming-main\Parallel-Programming-main\GPU\gpu.cu" 
+  gpu.cu
+C:\Parallel-Programming-main\Parallel-Programming-main\GPU\gpu.cu(24): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Parallel-Programming-main\Parallel-Programming-main\GPU\gpu.cu(73): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Parallel-Programming-main\Parallel-Programming-main\GPU\gpu.cu(94): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Parallel-Programming-main\Parallel-Programming-main\GPU\gpu.cu(101): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Parallel-Programming-main\Parallel-Programming-main\GPU\gpu.cu(120): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Parallel-Programming-main\Parallel-Programming-main\GPU\gpu.cu(122): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Parallel-Programming-main\Parallel-Programming-main\GPU\gpu.cu(144): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Parallel-Programming-main\Parallel-Programming-main\GPU\gpu.cu(145): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+kernel.cu.obj : error LNK2005: main이(가) gpu.cu.obj에 이미 정의되어 있습니다.
+     C:\Parallel-Programming-main\Parallel-Programming-main\x64\Debug\GPU.lib 라이브러리 및 C:\Parallel-Programming-main\Parallel-Programming-main\x64\Debug\GPU.exp 개체를 생성하고 있습니다.
+LINK : warning LNK4098: 'LIBCMT' defaultlib가 다른 라이브러리와 충돌합니다. /NODEFAULTLIB:library를 사용하십시오.
+gpu.cu.obj : error LNK2019: __imp_glutInitmain 함수에서 참조되는 확인할 수 없는 외부 기호
+gpu.cu.obj : error LNK2019: __imp_glutInitWindowSizemain 함수에서 참조되는 확인할 수 없는 외부 기호
+gpu.cu.obj : error LNK2019: __imp_glutInitDisplayModemain 함수에서 참조되는 확인할 수 없는 외부 기호
+gpu.cu.obj : error LNK2019: __imp_glutMainLoopmain 함수에서 참조되는 확인할 수 없는 외부 기호
+gpu.cu.obj : error LNK2019: __imp_glutCreateWindowmain 함수에서 참조되는 확인할 수 없는 외부 기호
+gpu.cu.obj : error LNK2019: __imp_glutPostRedisplay"void __cdecl Timer(int)" (?Timer@@YAXH@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
+gpu.cu.obj : error LNK2019: __imp_glutTimerFunc"void __cdecl Timer(int)" (?Timer@@YAXH@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
+gpu.cu.obj : error LNK2019: __imp_glutReshapeFuncmain 함수에서 참조되는 확인할 수 없는 외부 기호
+gpu.cu.obj : error LNK2019: __imp_glutDisplayFuncmain 함수에서 참조되는 확인할 수 없는 외부 기호
+C:\Parallel-Programming-main\Parallel-Programming-main\usr\lib\freeglut.lib : warning LNK4272: 'x86' 라이브러리 컴퓨터 종류가 'x64' 대상 컴퓨터 종류와 충돌합니다.
+C:\Parallel-Programming-main\Parallel-Programming-main\x64\Debug\GPU.exe : fatal error LNK1120: 9개의 확인할 수 없는 외부 참조입니다.
